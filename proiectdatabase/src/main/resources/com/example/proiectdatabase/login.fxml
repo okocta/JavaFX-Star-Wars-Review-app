@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectdatabase.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="393.0" fitWidth="228.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../OneDrive/Pictures/Starwarslogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="148.0" text="Username" textFill="#f3ff0b">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernametextField" layoutX="101.0" layoutY="144.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+            <Label layoutX="34.0" layoutY="212.0" text="Password" textFill="#fff820">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" layoutX="99.0" layoutY="208.0" prefHeight="26.0" prefWidth="178.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="21.0" layoutY="292.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #ff0;" text="Login" textFill="#050000" />
+            <Button fx:id="cancelButton" layoutX="21.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #ff0;" text="Cancel" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="20.0" layoutY="258.0" prefHeight="19.0" prefWidth="251.0" textFill="#ff0900">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logosImageView" fitHeight="85.0" fitWidth="164.0" layoutX="89.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/HD-wallpaper-star-wars-logo-for-your-mobile-tablet-explore-star-wars-logo-star-wars-jedi-logo-star-wars-empire-logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

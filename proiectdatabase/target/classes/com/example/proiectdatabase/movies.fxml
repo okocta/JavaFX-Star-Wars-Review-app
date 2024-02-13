@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="691.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectdatabase.MovieTable">
+   <children>
+      <TableView fx:id="tableView" fixedCellSize="46.0"  onMouseClicked="#showMovieReviews" layoutY="80.0" prefHeight="441.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="namecol" prefWidth="368.00000762939453" text="Movie Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="135.0" layoutY="30.0" prefHeight="18.0" prefWidth="300.0" text="SELECT A MOVIE AND GIVE IT A REVIEW!" textFill="#30cc62">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logomImageView" fitHeight="72.0" fitWidth="101.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/images/HD-wallpaper-star-wars-logo-for-your-mobile-tablet-explore-star-wars-logo-star-wars-jedi-logo-star-wars-empire-logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="462.0" layoutY="14.0" text="Select the movie you want to review!" textFill="#ffee00">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="select_id" alignment="CENTER" layoutX="512.0" layoutY="40.0" prefHeight="26.0" prefWidth="106.0" promptText="Select movie(1-9)" />
+      <Separator layoutX="447.0" orientation="VERTICAL" prefHeight="522.0" prefWidth="4.0" style="-fx-background-color: #800080;" />
+      <Label layoutX="546.0" layoutY="76.0" text="Rating" textFill="#eeff00">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="select_rating" alignment="CENTER" layoutX="508.0" layoutY="94.0" prefHeight="26.0" prefWidth="114.0" promptText="Select rating(1-10)" />
+      <Label layoutX="524.0" layoutY="130.0" text="Your comment" textFill="#eeff00">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="select_comment" layoutX="465.0" layoutY="161.0" prefHeight="200.0" prefWidth="200.0" promptText="Give us yout thoughts!" />
+      <Button fx:id="submitbut" layoutX="531.0" layoutY="372.0" onAction="#submitReview" mnemonicParsing="false" text="SUBMIT" textFill="#fc9700">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="erasebut" layoutX="531.0" layoutY="419.0" onAction="#eraseFields" mnemonicParsing="false" prefHeight="30.0" prefWidth="71.0" text="ERASE" textFill="#ff9900">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
